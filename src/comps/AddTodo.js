@@ -15,7 +15,7 @@ let AddTodo = ({dispatch}) => {
                 }}
             >
                 <input ref={node => {input = node}}/>
-                <button type="submit">Add Todo haha</button>
+                <button type="submit">Add Todo!</button>
             </form>
         </div>
     )
