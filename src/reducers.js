@@ -4,9 +4,10 @@ import { VisibilityFilters } from './actionTypes';
 const todos = (state = [], action) => {
   switch (action.type) {
     case 'TOGGLE_TODO':
-      return state.map((todo) => (todo.id === action.id ? { ...todo, completed: !todo.completed } : todo));
+      return state.map((todo) => (
+        todo.id === action.id ? { ...todo, completed: !todo.completed } : todo));
     case 'ADD_TODO':
-      return [...state, { text: action.text, completed: false , id: action.id}];
+      return [...state, { text: action.text, completed: false, id: action.id }];
     default:
       return state;
   }

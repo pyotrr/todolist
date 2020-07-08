@@ -3,8 +3,6 @@ import { useDispatch } from 'react-redux';
 import { addTodo } from '../actionTypes';
 
 const AddTodo = () => {
-//  const dispatch = useDispatch();
-//  const costam = useSelector((state) => state.costam)
   const dispatch = useDispatch();
 
   let input;

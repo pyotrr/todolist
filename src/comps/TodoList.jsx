@@ -21,4 +21,8 @@ TodoList.propTypes = {
   toggleTodo: PropTypes.func.isRequired,
 };
 
+TodoList.defaultProps = {
+  todos: [],
+};
+
 export default TodoList;

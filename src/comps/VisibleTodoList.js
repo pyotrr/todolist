@@ -10,6 +10,8 @@ const getVisibleTodos = (todos, filter) => {
       return todos.filter((todo) => todo.completed);
     case 'SHOW_ACTIVE':
       return todos.filter((todo) => !todo.completed);
+    default:
+      throw new Error('Unknown visability filter!');
   }
 };
 
