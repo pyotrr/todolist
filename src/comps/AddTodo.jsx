@@ -7,9 +7,9 @@ const AddTodo = () => {
 
   let input;
   return (
-    <div className="grid-container">
+    <div className="grid-x align-center">
       <form
-        // className="grid-x large-centered"
+        className="cell large-6"
         onSubmit={(e) => {
           e.preventDefault();
           if (!input.value.trim()) {
