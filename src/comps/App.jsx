@@ -4,7 +4,12 @@ import AddTodo from './AddTodo';
 import VisibleTodoList from './VisibleTodoList';
 
 const App = () => (
-  <div>
+  <div className="grid-container">
+    <div className="grid-x align-center">
+      <div className="top-bar-title align-center">
+        <h2>TODO APP</h2>
+      </div>
+    </div>
     <AddTodo />
     <VisibleTodoList />
     <Footer />

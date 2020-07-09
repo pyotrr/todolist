@@ -7,18 +7,24 @@ const AddTodo = () => {
 
   let input;
   return (
-    <div>
-      <form onSubmit={(e) => {
-        e.preventDefault();
-        if (!input.value.trim()) {
-          return;
-        }
-        dispatch(addTodo(input.value));
-        input.value = '';
-      }}
+    <div className="grid-container">
+      <form
+        // className="grid-x large-centered"
+        onSubmit={(e) => {
+          e.preventDefault();
+          if (!input.value.trim()) {
+            return;
+          }
+          dispatch(addTodo(input.value));
+          input.value = '';
+        }}
       >
-        <input ref={(node) => { input = node; }} />
-        <button type="submit">Add Todo</button>
+        <div className="input-group">
+          <input className="input-group-field" placeholder="I want to do..." ref={(node) => { input = node; }} />
+          <div className="input-group-button">
+            <button className="button" type="submit">Add Todo</button>
+          </div>
+        </div>
       </form>
     </div>
   );

@@ -3,11 +3,13 @@ import FilterLink from './FilterLink';
 import { VisibilityFilters } from '../actionTypes';
 
 const Footer = () => (
-  <div>
-    <span>Show: </span>
-    <FilterLink filter={VisibilityFilters.SHOW_ALL}>All</FilterLink>
-    <FilterLink filter={VisibilityFilters.SHOW_ACTIVE}>Active</FilterLink>
-    <FilterLink filter={VisibilityFilters.SHOW_COMPLETED}>Completed</FilterLink>
+  <div className="grid-x align-center grid-margin-y">
+    <ul className="menu align-center">
+      <li className="menu-text">Show: </li>
+      <li><FilterLink filter={VisibilityFilters.SHOW_ALL}>All</FilterLink></li>
+      <li><FilterLink filter={VisibilityFilters.SHOW_ACTIVE}>Active</FilterLink></li>
+      <li><FilterLink filter={VisibilityFilters.SHOW_COMPLETED}>Completed</FilterLink></li>
+    </ul>
   </div>
 );
 
