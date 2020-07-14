@@ -2,9 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Todo = ({ onClick, completed, text }) => (
-  <li onClick={onClick} role="presentation" style={{ textDecoration: completed ? 'line-through' : 'none' }}>
-    {text}
-  </li>
+  <div className="button secondary" onClick={onClick} role="presentation">
+    <li style={{ textDecoration: completed ? 'line-through' : 'none' }}>
+      {text}
+    </li>
+  </div>
 );
 
 Todo.propTypes = {

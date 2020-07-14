@@ -9,7 +9,7 @@ const AddTodo = () => {
   return (
     <div className="grid-x align-center">
       <form
-        className="cell large-6"
+        className="cell small-10 medium-8 large-6"
         onSubmit={(e) => {
           e.preventDefault();
           if (!input.value.trim()) {
@@ -20,7 +20,7 @@ const AddTodo = () => {
         }}
       >
         <div className="input-group">
-          <input className="input-group-field" placeholder="I want to do..." ref={(node) => { input = node; }} />
+          <input className="input-group-field expanded" placeholder="I want to do..." ref={(node) => { input = node; }} />
           <div className="input-group-button">
             <button className="button" type="submit">Add Todo</button>
           </div>
